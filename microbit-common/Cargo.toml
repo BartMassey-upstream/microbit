@@ -34,7 +34,8 @@ version = "0.14.0"
 
 [dependencies.nrf52833-hal]
 optional = true
-version = "0.14.0"
+git = "http://github.com/BartMassey-upstream/nrf-hal"
+branch = "saadc-dma-multisample"
 
 [features]
 doc = []
