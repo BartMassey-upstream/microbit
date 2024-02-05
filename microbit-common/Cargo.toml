@@ -1,6 +1,6 @@
 [package]
 name = "microbit-common"
-version = "0.13.0"
+version = "0.13.1"
 description = "Implementation details for the BBC Micro:bit board support crates"
 edition = "2018"
 readme = "../README.md"
@@ -31,10 +31,12 @@ embedded-hal = "0.2.4"
 [dependencies.nrf51-hal]
 optional = true
 git = "https://github.com/BartMassey-upstream/nrf-hal"
+branch = "v0.16.1-pre"
 
 [dependencies.nrf52833-hal]
 optional = true
 git = "https://github.com/BartMassey-upstream/nrf-hal"
+branch = "v0.16.1-pre"
 
 [features]
 doc = []
