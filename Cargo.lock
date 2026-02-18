@@ -714,10 +714,29 @@ dependencies = [
  "embedded-storage",
  "fixed",
  "nb 1.1.0",
- "nrf-usbd",
  "nrf51-pac",
- "nrf52833-pac",
  "rand_core 0.9.3",
+ "void",
+]
+
+[[package]]
+name = "nrf-hal-common"
+version = "0.19.0"
+source = "git+http://github.com/BartMassey-upstream/nrf-hal?branch=saadc-dma-multisample-2#2e843a6337426bb65210a0da1e24014971518cd5"
+dependencies = [
+ "cast",
+ "cfg-if",
+ "cortex-m",
+ "embedded-dma",
+ "embedded-hal 0.2.7",
+ "embedded-hal 1.0.0",
+ "embedded-io",
+ "embedded-storage",
+ "fixed",
+ "nb 1.1.0",
+ "nrf-usbd",
+ "nrf52833-pac",
+ "rand_core 0.10.0",
  "void",
 ]
 
@@ -739,7 +758,7 @@ version = "0.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2ec8325f08b5eecc24da8f257c6339b3dc7ee66025ef96e58fc414bbb30aebf6"
 dependencies = [
- "nrf-hal-common",
+ "nrf-hal-common 0.19.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "nrf51-pac",
 ]
 
@@ -757,10 +776,9 @@ dependencies = [
 [[package]]
 name = "nrf52833-hal"
 version = "0.19.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5fa51030952f3454f2faffc64061456f17aec15f492d7b6ef68777bfc438c561"
+source = "git+http://github.com/BartMassey-upstream/nrf-hal?branch=saadc-dma-multisample-2#2e843a6337426bb65210a0da1e24014971518cd5"
 dependencies = [
- "nrf-hal-common",
+ "nrf-hal-common 0.19.0 (git+http://github.com/BartMassey-upstream/nrf-hal?branch=saadc-dma-multisample-2)",
  "nrf52833-pac",
 ]
 
